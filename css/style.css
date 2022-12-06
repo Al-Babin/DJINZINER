@@ -347,7 +347,7 @@
 
 .button::before {
   content: "";
-  background: url("/img/icons/lamp.svg") no-repeat;
+  background: url("./img/icons/lamp.svg") no-repeat;
   background-position: center center;
   width: 60px;
   height: 60px;
@@ -860,7 +860,7 @@
   position: absolute;
   top: -0.125em;
   left: -1.525em;
-  background: url(/img/icons/skills/djin-title-small.svg) no-repeat;
+  background: url(./img/icons/skills/djin-title-small.svg) no-repeat;
   background-size: cover;
   background-position: 0 0;
   width: 3.275em;
@@ -872,7 +872,7 @@
   position: absolute;
   top: -0.1em;
   left: 0;
-  background: url(/img/icons/skills/web.svg) no-repeat;
+  background: url(./img/icons/skills/web.svg) no-repeat;
   background-size: cover;
   background-position: 0 0;
   width: 1.75em;
@@ -1543,27 +1543,27 @@
 }
 
 .contacts-list__item--email::before {
-  background: url("/img/icons/contacts/email.svg") no-repeat;
+  background: url("./img/icons/contacts/email.svg") no-repeat;
   background-position: 50% 50%;
 }
 
 .contacts-list__item--phone::before {
-  background: url("/img/icons/contacts/phone.svg") no-repeat;
+  background: url("./img/icons/contacts/phone.svg") no-repeat;
   background-position: 50% 50%;
 }
 
 .contacts-list__item--whatsApp::before {
-  background: url("/img/icons/contacts/whatsApp.svg") no-repeat;
+  background: url("./img/icons/contacts/whatsApp.svg") no-repeat;
   background-position: 50% 50%;
 }
 
 .contacts-list__item--telegram::before {
-  background: url("/img/icons/contacts/telegram.svg") no-repeat;
+  background: url("./img/icons/contacts/telegram.svg") no-repeat;
   background-position: 50% 50%;
 }
 
 .contacts-list__item--behance::before {
-  background: url("/img/icons/contacts/behance.svg") no-repeat;
+  background: url("./img/icons/contacts/behance.svg") no-repeat;
   background-position: 50% 50%;
 }
 
@@ -1574,7 +1574,7 @@
   height: 100%;
   top: 0px;
   left: -6px;
-  background: url("/img/icons/contacts/whatsApp-hovered.svg") no-repeat;
+  background: url("./img/icons/contacts/whatsApp-hovered.svg") no-repeat;
   background-position: 50% 50%;
   opacity: 0;
   transition: 600ms ease-out;
@@ -1648,7 +1648,7 @@
   position: absolute;
   top: 0.08em;
   left: -1.6em;
-  background: url(/img/icons/Jinn.svg) no-repeat;
+  background: url(./img/icons/Jinn.svg) no-repeat;
   background-size: cover;
   background-position: 0 0;
   width: 2.92em;
