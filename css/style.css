@@ -147,7 +147,7 @@
 .menu__link::after {
   content: "";
   position: absolute;
-  background: url(/img/icons/small-cerculs.svg) no-repeat 140px 140px;
+  background: url(../img/icons/small-cerculs.svg) no-repeat 140px 140px;
   background-position: 50% 50%;
   width: 140px;
   height: 140px;
@@ -347,7 +347,7 @@
 
 .button::before {
   content: "";
-  background: url("./img/icons/lamp.svg") no-repeat;
+  background: url("../img/icons/lamp.svg") no-repeat;
   background-position: center center;
   width: 60px;
   height: 60px;
@@ -860,7 +860,7 @@
   position: absolute;
   top: -0.125em;
   left: -1.525em;
-  background: url(./img/icons/skills/djin-title-small.svg) no-repeat;
+  background: url(../img/icons/skills/djin-title-small.svg) no-repeat;
   background-size: cover;
   background-position: 0 0;
   width: 3.275em;
@@ -872,7 +872,7 @@
   position: absolute;
   top: -0.1em;
   left: 0;
-  background: url(./img/icons/skills/web.svg) no-repeat;
+  background: url(../img/icons/skills/web.svg) no-repeat;
   background-size: cover;
   background-position: 0 0;
   width: 1.75em;
@@ -974,7 +974,7 @@
   top: 0;
   left: 0;
   content: "";
-  background: url("/img/icons/genie_logo-white.svg") no-repeat;
+  background: url("./img/icons/genie_logo-white.svg") no-repeat;
   width: 90px;
   height: 222px;
   transition: 400ms ease-out;
