@@ -1,0 +1,21 @@
+.price {
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+}
+
+.price__paralax-image {
+    position: absolute;
+    top: 289px;
+    left: 0;
+    overflow: hidden;
+}
+
+.price__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 473px;
+    left: 688px;
+}

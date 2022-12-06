@@ -1,0 +1,33 @@
+.page{
+    height: 100%;
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    line-height: 24px;
+    background: linear-gradient(92.05deg, rgba(241, 248, 252, 0.2) 0%, rgba(202, 237, 255, 0.2) 99.29%);  
+}
+
+.page__body{
+    min-height: 100%;
+    margin:0;
+    color: $text-color;
+}
+
+.page__body.lock {
+    overflow: hidden;
+}
+
+.page-title {
+    text-align: center;
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 110px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+.page-title--white {
+    color:white;
+}

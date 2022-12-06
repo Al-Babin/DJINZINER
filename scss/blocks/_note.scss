@@ -1,0 +1,72 @@
+.note {
+    width: 100%;
+}
+
+.note__block {
+    width: 59.1%;
+    background: linear-gradient(2.05deg, #091C91 0%, #24BCFF 99.29%);
+    box-shadow: 1px 1px 15px rgba(49, 97, 230, 0.07);
+    border-radius: 50px;
+    margin: 0 auto;
+    padding: 60px 70px;
+}
+
+.note__content {
+    padding-left: 150px;
+    position: relative;
+}
+
+.note__content::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: url("/img/icons/genie_logo-white.svg") no-repeat;
+    width: 90px;
+    height: 222px;
+    transition: 400ms ease-out;
+}
+
+.note__block:hover .note__content::before {
+    transform: scale(1.1);
+    transition: 600ms ease-out;
+}
+
+.note__paragraph {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: white;
+    margin-bottom: 30px;;
+}
+
+.note__list {
+    margin: 0;
+    padding: 0;
+    padding-left: 33px;
+    list-style: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    color: white;
+}
+
+.note__item {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.note__item::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: -22px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+}

@@ -1,0 +1,60 @@
+//Fonts import
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('/fonts/CenturyGothic.woff2') format('woff2'),
+         url('/fonts/CenturyGothic.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('/fonts/CenturyGothic-Bold.woff2') format('woff2'),
+         url('/fonts/CenturyGothic-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adventure';
+    src: url('/fonts/Adventure.woff2') format('woff2'),
+         url('/fonts/Adventure.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+//Sass modules import
+
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./helpers/visually-hidden";
+@import "./helpers/container";
+@import "./blocks/page";
+@import "./blocks/page-header";
+@import "./blocks/nav";
+@import "./blocks/offer";
+@import "./blocks/button";
+@import "./blocks/socials";
+@import "./blocks/header-img";
+@import "./blocks/cerculs";
+@import "./blocks/benefits";
+@import "./blocks/page-main";
+@import "./blocks/services";
+@import "./blocks/services-card";
+@import "./blocks/services-bg-img";
+@import "./blocks/statistics";
+@import "./blocks/skills";
+@import "./blocks/skills-item";
+@import "./blocks/note";
+@import "./blocks/price";
+@import "./blocks/paralax_image";
+@import "./blocks/price-block";
+@import "./blocks/portfolio";
+@import "./blocks/arrow-button";
+@import "./blocks/portfolio-mockup";
+@import "./blocks/steps";
+@import "./blocks/step-card";
+@import "./blocks/contacts";
+@import "./blocks/contacts-bg";
+@import "./blocks/title-gradientPart";

@@ -1,0 +1,38 @@
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.dot {
+    background-color: transparent;
+    border: 1px solid $second;
+    width: $dot-size;
+    height: $dot-size;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+.dot span {
+    display: none;
+}
+
+.dot::before {
+    content: "";
+    width: $dot-size;
+    height: $dot-size;
+    border-radius: 50%;
+    background-color: $second;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0;
+}
+
+.dot--active.dot::before {
+    opacity: 100%;
+}

@@ -1,0 +1,11 @@
+@mixin outline($color:green, $size:0) {
+    outline: 2px solid $color;
+    outline-offset: -$size;
+}
+
+@mixin sizes_in_vh($heightInPx, $heightPageInPx) {
+    
+    $final_size: calc($heightInPx*100/$heightPageInPx);
+    width: $final_size;
+    height: $final_size;
+}

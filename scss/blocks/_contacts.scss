@@ -1,0 +1,200 @@
+.contacts {
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.contacts__paragraph {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.01em;
+    color: $text-color;
+
+    margin: 0;
+    padding: 0;
+}
+
+.contacts__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__paragraph {
+    margin-bottom: 80px;
+}
+
+.contacts-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 110px;
+
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 0.01em;
+    color: $text-color;
+}
+
+.contacts-list__item {
+    padding-left: 50px;
+    position: relative;
+
+    //Contacts icons basic styles
+    &::before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 100%;
+        top: 0px;
+        left: -6px;
+    }
+}
+
+//Contacts icons url
+
+.contacts-list__item--email {
+    &::before {
+        background: url("/img/icons/contacts/email.svg") no-repeat; 
+        background-position: 50% 50%;
+    }
+}
+
+.contacts-list__item--phone {
+    &::before {
+        background: url("/img/icons/contacts/phone.svg") no-repeat; 
+        background-position: 50% 50%;
+    }
+}
+
+.contacts-list__item--whatsApp {
+    &::before {
+        background: url("/img/icons/contacts/whatsApp.svg") no-repeat; 
+        background-position: 50% 50%;
+    }
+}
+
+.contacts-list__item--telegram  {
+    &::before {
+        background: url("/img/icons/contacts/telegram.svg") no-repeat; 
+        background-position: 50% 50%;
+    }
+}
+.contacts-list__item--behance  {
+    &::before {
+        background: url("/img/icons/contacts/behance.svg") no-repeat; 
+        background-position: 50% 50%;
+    }
+}
+
+//Whatsapp green hover
+
+.contacts-list__item--whatsApp::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    top: 0px;
+    left: -6px;
+    background: url("/img/icons/contacts/whatsApp-hovered.svg") no-repeat; 
+    background-position: 50% 50%;
+    opacity: 0;
+    transition: 600ms ease-out;
+}
+
+.contacts-list__item--whatsApp:hover::after {
+    opacity: 1;
+}
+
+
+
+//Hover changing color and rising line at the bottom of link
+
+.contacts-list__item > a {
+    position: relative;
+    text-decoration: none;
+    color: $text-color;
+    display: inline-block;
+    overflow: hidden;
+    background: linear-gradient(to right, #091C91 0%, #24BCFF 50%, $text-color 50%);
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+
+    transition: 300ms ease-out;
+
+    &:hover {
+        background-position: 0 100%;
+        transition: 600ms ease-out;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(92.05deg, #091C91 0%, #24BCFF 99.29%);
+        transition: 300ms ease-out;
+    }
+
+
+    &:hover::after {
+        width: 100%;
+        transition: 600ms ease-out;
+    }
+}
+
+.contacts-list__item--whatsApp a {
+    background: linear-gradient(to right, #239110 0%, #61EE61 50%, $text-color 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+
+    &::after {
+        background: linear-gradient(92.05deg, #239110 0%, #61EE61 99.29%);
+    }
+}
+
+//Copiright
+
+.contacts__copyright {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+}
+
+//Contaacts title djinn
+.contacts-title--margin-left {
+    display: inline-block;
+    margin-left: 154px;
+}
+
+.contacts-title--djin {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0.08em;
+        left: -1.6em;
+        background: url(/img/icons/Jinn.svg) no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+        width: 2.92em;
+        height: 1.16em;
+    }
+}

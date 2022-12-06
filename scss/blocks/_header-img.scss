@@ -1,0 +1,35 @@
+.header-img__cerculs {
+    position: absolute;
+    z-index: 0;
+
+    transition: all 1.2s ease-out;
+}
+
+.header-img__man {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 78.76%;
+    z-index: 1;
+    transition: all 1.2s ease-out;
+}
+
+.header-img__smoke {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    transition: all 1.2s ease-out;
+}
+
+.header-img:hover .header-img__cerculs {
+    transform: scale(0.89);
+}
+
+.header-img:hover .header-img__smoke {
+    transform: scale(1.08);
+}
+
+.header-img:hover .header-img__man {
+    transform: scale(1.038);
+}

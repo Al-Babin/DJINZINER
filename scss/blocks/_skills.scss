@@ -1,0 +1,61 @@
+.skills__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 140px;
+}
+
+.skills-column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-column__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.01em;
+    margin: 0;
+    padding: 0;
+}
+.skills-column__title--margin-left{
+    display: inline-block;
+    margin-left: 1.675em;
+}
+
+.skills-column__title--djinn-small {
+    &::before {
+        content: "";
+        position: absolute;
+        top: -0.125em;
+        left: -1.525em;
+        background: url(/img/icons/skills/djin-title-small.svg) no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+        width: 3.275em;
+        height: 1.375em;
+    }
+}
+
+.skills-column__title--web {
+    &::before {
+        content: "";
+        position: absolute;
+        top: -0.1em;
+        left: 0;
+        background: url(/img/icons/skills/web.svg) no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+        width: 1.75em;
+        height: 1.375em;
+    }
+}

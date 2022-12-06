@@ -1,0 +1,78 @@
+.paralax-image {
+    width: 100%;
+    height: 783px+92px;
+}
+
+.paralax-image__big-smoke {
+    position: absolute;
+    top: 10px;
+    left: 17.6vw;
+    z-index: 1;
+    width: 68.9vw;
+    transition: all 1.2s ease-out;
+}
+
+.paralax-image__man-img {
+    position: absolute;
+    top: 92px;
+    left: -18.38vw;
+}
+
+.man-img {
+    width: 1123px;
+    height: 783px;
+    position: relative;
+    transition: all 1.2s ease-out;
+}
+
+.man-img__body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all 1.2s ease-out;
+}
+
+.man-img__hand{
+    position: absolute;
+    top: 293px;
+    left: 763px;
+    z-index: 3;
+    transition: all 1.2s ease-out;
+}
+
+.paralax-image__small-smoke--left {
+    position: absolute;
+    top: 149px;
+    left: 25.10vw;
+    z-index: 6;
+    transition: all 1.2s ease-out;
+}
+
+.paralax-image__small-smoke--right {
+    position: absolute;
+    top: 459px;
+    right: 11.25vw;
+    z-index: 6;
+    transition: all 1s ease-out;
+}
+
+//Paralax hover
+.paralax-image:hover .man-img__body {
+    transform: translateX(10px);
+}
+.paralax-image:hover .man-img__hand {
+    transform: translateX(10px);
+}
+
+.paralax-image:hover .paralax-image__big-smoke {
+    transform: translateX(28px) scale(1.024);
+}
+
+.paralax-image:hover .paralax-image__small-smoke--left {
+    transform: translateX(30px);
+}
+
+.paralax-image:hover .paralax-image__small-smoke--right {
+    transform: translateX(-20px);
+}

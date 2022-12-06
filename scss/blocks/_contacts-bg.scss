@@ -1,0 +1,33 @@
+.contacts-bg {
+    position: absolute;
+    width: 1153px;
+    height: 1164px;
+    top: 490px;
+    right: -274px;
+}
+
+.contacts-bg__head {
+    position: absolute;
+    z-index: 1;
+    top: 332px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 600ms ease-out;
+}
+
+.contacts-bg__cerculs {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 600ms ease-out;
+}
+
+.contacts-bg:hover .contacts-bg__cerculs {
+    transform: translate(-50%, -50%) scale(1.168) translate(0, -7%);
+}
+
+.contacts-bg:hover .contacts-bg__head {
+    transform: translate(-50%, -50%) translateY(16%);
+}

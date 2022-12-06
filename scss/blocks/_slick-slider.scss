@@ -1,0 +1,114 @@
+/* Слайдер */
+.slider {
+    position: relative;
+}
+
+.slider__item {
+    text-align: center;
+}
+
+/* Ограничивающая оболочка */
+.slider .slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slider .slick-track{
+  display: flex;
+}
+
+/* Слайд */
+.slider .slick-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    @media (min-width:$tablet) {
+        opacity: 0%; 
+    }
+    
+}
+
+/* Слайд активный (показывается) */
+.slider .slick-slide.slick-active{
+    
+}
+
+/* Слайд основной */
+.slider .slick-slide.slick-current{
+}
+
+/* Слайд по центру */
+.slider .slick-slide.slick-center{
+    opacity: 100%;
+}
+
+// Стрелки
+
+.slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    border: none;
+    background-color: transparent;
+}
+
+.slider .slick-arrow.slick-prev{
+    left: 5%;
+    background: url('../img/icons/arrow.svg') 0 0 / 100% no-repeat;
+    transform: rotate(180deg);
+}
+
+.slider .slick-arrow.slick-next{
+    right: 5%;
+    background: url('../img/icons/arrow.svg') 0 0 / 100% no-repeat;
+}
+
+/* Точки (булиты) */
+.slider .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+}
+.slider .slick-dots li{
+    list-style: none;
+}
+
+/* Элемент точки */
+.slider .slick-dots li button{
+    font-size: 0;
+    background-color: transparent;
+    border: 1px solid $second;
+    width: $dot-size;
+    height: $dot-size;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+.slider .slick-dots li button::before{
+    content: "";
+    width: $dot-size;
+    height: $dot-size;
+    border-radius: 50%;
+    background-color: $second;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0;
+}
+
+/* Активная точка */
+.slider .slick-dots li.slick-active button::before {
+    opacity: 100%;
+}

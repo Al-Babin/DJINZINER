@@ -1,0 +1,37 @@
+.services {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.blue-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    width: 100%;
+    // height: 1112px;
+    height: 100%;
+    background: linear-gradient(0deg, #091C91 0%, #24BCFF 99.29%);
+    grid-column: 2/-1;
+}
+
+.services__title {
+    grid-column: 1/-1;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 276px;
+    z-index: 1;
+}
+
+.services__title span {
+    display: inline-block;
+    margin-left: 160px;
+    transform: translateX(-20px);
+    color: rgba(255, 255, 255, 1);
+}
+
+.services__bg-img {
+    top: 60px;
+}
