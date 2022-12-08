@@ -1,19 +1,13 @@
 .steps {
     // background: linear-gradient(92.05deg, rgba(120, 209, 255, 0.2) 0%, rgba(245, 245, 245, 0.2) 99.29%);
     position: relative;
-    height: 942px;
-    box-sizing: border-box;
-    filter: invert(1);
 }
 
 .steps__page-title {
     margin-bottom: 40px;
     position: relative;
     z-index: 5;
-    mix-blend-mode:difference;
-    color: $steps-color;
-    filter: invert(1);
-
+    color: $text-color;
 }
 
 .steps__describtion {
@@ -24,12 +18,12 @@
     line-height: 49px;
     text-align: center;
     letter-spacing: 0.01em;
-    mix-blend-mode:difference;
-    color: $steps-color;
-    filter: invert(1);
+    color: $text-color;
 
     margin: 0;
     padding: 0;
+
+    margin-bottom: 40px;
 }
 
 .steps__list {
@@ -38,12 +32,5 @@
 
     margin: 0;
     padding: 0;
-
-    position: absolute;
-    height: inherit;
-    top: 0;
-    left: 0;
-
     z-index: 0;
-    filter: invert(1);
 }

@@ -5,7 +5,7 @@
     align-items: center;
     padding-left: 35px;
     padding-right: 35px;
-    padding-top: 399px;
+    padding-top: 60px;
     padding-bottom: 100px;
     position: relative;
     z-index: 0;
@@ -19,7 +19,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        background: linear-gradient(0deg, #091C91 0%, $steps-color 70%, $steps-color 100%);
+        background: linear-gradient(92.05deg, #091C91 0%, #24BCFF 99.29%);
         opacity: 0;
         z-index: 1;
         transition: 600ms ease-out;
@@ -55,7 +55,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: 30px;
     z-index: 2;
 
     transition: 600ms ease-out;
@@ -102,7 +101,7 @@
     line-height: 25px;
     text-align: center;
     letter-spacing: 0.01em;
-    max-width: 90%;
+    max-width: 91%;
 
     z-index: 2;
 
@@ -114,4 +113,3 @@
     align-self: flex-start;
     color: white;
 }
-
