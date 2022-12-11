@@ -26,14 +26,14 @@
    color: $text-color;
    display: inline-block;
    box-sizing: border-box;
-   padding: 58px 29px;
+   padding: 54px 29px;
    position: relative;
 }
 
 .menu__link::after {
    content: "";
    position: absolute;
-   background: url(./img/icons/small-cerculs.svg) no-repeat 140px 140px;
+   background: url(../img/icons/small-cerculs.svg) no-repeat 140px 140px;
    background-position: 50% 50%;
    width: 140px;
    height: 140px;
