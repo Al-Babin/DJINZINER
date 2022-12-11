@@ -99,19 +99,12 @@
 
 .page-header__img {
   position: absolute;
-  height: 100vh;
-  width: 1124px;
-  top: 0;
+  height: 47.135vw;
+  width: 53.125vw;
+  bottom: 0;
   right: 0;
   z-index: 0;
   overflow: hidden;
-}
-
-.header-img__cerculs {
-  width: 1124px;
-  height: 1124px;
-  top: 70px;
-  right: -140px;
 }
 
 .nav {
@@ -431,6 +424,9 @@
 .header-img__cerculs {
   position: absolute;
   z-index: 0;
+  width: 110.196078%;
+  height: auto;
+  right: -12.455516%;
   transition: all 1.2s ease-out;
 }
 
@@ -438,7 +434,8 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 78.76%;
+  width: 74.3137255%;
+  height: auto;
   z-index: 1;
   transition: all 1.2s ease-out;
 }
@@ -448,6 +445,8 @@
   bottom: 0;
   right: 0;
   z-index: 0;
+  width: 71.17647%;
+  height: auto;
   transition: all 1.2s ease-out;
 }
 
