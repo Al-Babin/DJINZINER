@@ -320,7 +320,7 @@
 }
 
 .button {
-  width: 313px;
+  min-width: 313px;
   height: 60px;
   background: transparent;
   padding-left: 75px;
