@@ -1229,7 +1229,7 @@
 
 .price-block__position-value::after {
   content: "";
-  background: url("/img/icons/rub-icon.svg") no-repeat 0 0;
+  background: url("../img/icons/rub-icon.svg") no-repeat 0 0;
   width: 18px;
   height: 29px;
   position: absolute;
