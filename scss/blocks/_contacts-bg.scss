@@ -12,7 +12,7 @@
     top: 332px;
     left: 50%;
     transform: translateX(-50%);
-    transition: 600ms ease-out;
+    transition: 1.2s ease-out;
 }
 
 .contacts-bg__cerculs {
@@ -21,13 +21,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: 600ms ease-out;
+    transition: 1.2s ease-out;
 }
 
-.contacts-bg:hover .contacts-bg__cerculs {
+.contacts-bg--scroll .contacts-bg__cerculs {
     transform: translate(-50%, -50%) scale(1.168) translate(0, -7%);
 }
 
-.contacts-bg:hover .contacts-bg__head {
+.contacts-bg--scroll .contacts-bg__head {
     transform: translate(-50%, -50%) translateY(16%);
 }
