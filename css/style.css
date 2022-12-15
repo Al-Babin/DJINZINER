@@ -414,6 +414,41 @@
   gap: 10px;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
+}
+
+.socials__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  opacity: 0;
+  transition: all 600ms ease-out;
+}
+
+.socials__item--Telegram::after {
+  content: "";
+  background: url(../img/icons/Socials/Telegram/Telegram-logo-colored.svg) no-repeat;
+  z-index: 4;
+}
+
+.socials__item--WhatsApp::after {
+  content: "";
+  background: url(../img/icons/Socials/WhatsApp/WhatsApp-logo-colored.svg) no-repeat;
+  z-index: 4;
+}
+
+.socials__item--Behance::after {
+  content: "";
+  background: url(../img/icons/Socials/Behance/Behance-logo-colored.svg) no-repeat;
+  z-index: 4;
+}
+
+.socials__name {
+  transition: 600ms ease-out;
 }
 
 .socials__icon {
@@ -421,8 +456,16 @@
   transition: 600ms ease-out;
 }
 
+.socials__item:hover .socials__name {
+  opacity: 0;
+}
+
 .socials__item:hover .socials__icon {
   transform: scale(1);
+}
+
+.socials__item:hover.socials__item::after {
+  opacity: 1;
 }
 
 .header-img__cerculs {
