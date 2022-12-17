@@ -271,6 +271,8 @@
   height: 74px;
   position: relative;
   min-width: 327px;
+  border-radius: 90px;
+  overflow: hidden;
 }
 
 .button-wrapper::before {
@@ -279,7 +281,6 @@
   width: 100%;
   height: inherit;
   background: linear-gradient(92.05deg, #A2B6ED 0%, #216CCF 99.29%);
-  border-radius: 90px;
   transition: 600ms ease-out;
 }
 
@@ -322,10 +323,11 @@
 }
 
 .button {
-  width: 100%;
+  width: 95.7186544%;
   height: 60px;
   background: transparent;
   padding-left: 75px;
+  padding-right: 25px;
   font-size: 1.125em;
   font-family: inherit;
   font-weight: 400;
@@ -346,12 +348,13 @@
   content: "";
   background: url("../img/icons/lamp.svg") no-repeat;
   background-position: center center;
-  width: 60px;
-  height: 60px;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
   position: absolute;
-  top: 0px;
-  left: 10px;
-  border-radius: 50%;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 25px;
   transition: 600ms ease-out;
 }
 
@@ -359,12 +362,11 @@
   content: attr(data-buttonContent);
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-start;
   width: 100%;
-  box-sizing: border-box;
   height: 60px;
   background: transparent;
-  padding-right: 19px;
+  padding-left: 75px;
   font-size: 1em;
   font-family: inherit;
   font-weight: 700;
@@ -390,7 +392,7 @@
 }
 
 .button-wrapper:hover .button::before {
-  transform: translateX(-4px);
+  transform: translate(-10px, -50%);
 }
 
 .button-wrapper:hover .button {
@@ -399,6 +401,10 @@
 
 .button-wrapper:hover .button::after {
   opacity: 1;
+}
+
+.button-wrapper:hover .price-button::before {
+  transform: translate(-3px, -50%);
 }
 
 .socials {
@@ -1047,6 +1053,14 @@
   position: absolute;
   top: 473px;
   left: 688px;
+}
+
+.price-button::before {
+  background: url("../img/price/genie_logo_button.svg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 16px;
+  height: 36px;
 }
 
 .paralax-image {

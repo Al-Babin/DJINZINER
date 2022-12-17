@@ -19,3 +19,11 @@
     top: 473px;
     left: 688px;
 }
+
+.price-button::before {
+    background: url('../img/price/genie_logo_button.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 16px;
+    height: 36px
+}
