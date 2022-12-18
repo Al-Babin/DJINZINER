@@ -964,6 +964,90 @@
   position: relative;
 }
 
+.skills-img {
+  opacity: 1;
+  transition: all 600ms ease-out;
+}
+
+.skills-item__img::after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  transition: all 600ms ease-out;
+}
+
+#Freelance-icon::after {
+  background: url("../img/icons/skills/Freelance_icon hover.svg") no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  width: 60px;
+  height: 80px;
+}
+
+#Skillbox-icon::after {
+  background: url("../img/icons/skills/Skillbox logo hover.svg") no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  width: 60px;
+  height: 60px;
+}
+
+#WayUp-icon::after {
+  background: url("../img/icons/skills/WayUp logo hover.svg") no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  width: 60px;
+  height: 60px;
+}
+
+#Alchemy-icon::after {
+  background: url("../img/icons/skills/Alchemy logo hover.svg") no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  width: 60px;
+  height: 60px;
+}
+
+#Figma-icon::after {
+  background: url("../img/icons/skills/Figma-hover.svg") no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  width: 55px;
+  height: 82px;
+}
+
+#PS-icon::after {
+  background: url("../img/icons/skills/PS-logo-hover.svg") no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  width: 93px;
+  height: 82px;
+}
+
+#AI-icon::after {
+  background: url("../img/icons/skills/AI-logo-hover.svg") no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  width: 80px;
+  height: 82px;
+}
+
+#AE-icon::after {
+  background: url("../img/icons/skills/AE-logo-hover.svg") no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  width: 105px;
+  height: 82px;
+}
+
+#HTMLandCss-icon::after {
+  background: url("../img/icons/skills/HTMLandCss-hover.svg") no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  width: 120px;
+  height: 77px;
+}
+
 .skills-column--right .skills-item__img {
   flex: 1 1 auto;
 }
@@ -976,6 +1060,7 @@
   border-radius: 7.5px;
   overflow: hidden;
   margin-bottom: 19px;
+  transition: all 600ms ease-out;
 }
 
 .skills-item__level::after {
@@ -983,10 +1068,29 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 80%;
-  height: 14px;
+  height: 100%;
   background: linear-gradient(92.05deg, #091C91 0%, #24BCFF 99.29%);
   border-radius: 7.5px;
+}
+
+.skills-item__level--1::after {
+  width: 80%;
+}
+
+.skills-item__level--2::after {
+  width: 65%;
+}
+
+.skills-item__level--3::after {
+  width: 34%;
+}
+
+.skills-item__level--4::after {
+  width: 20%;
+}
+
+.skills-item__level--5::after {
+  width: 43%;
 }
 
 .skills-column--right .skills-item__text {
@@ -1001,6 +1105,18 @@
 
 .skills-item:hover .skills-item__img {
   transform: scale(1.16);
+}
+
+.skills-item:hover .skills-item__img::after {
+  opacity: 1;
+}
+
+.skills-item:hover .skills-img {
+  opacity: 0;
+}
+
+.skills-item:hover .skills-item__level {
+  transform: scaleY(114.285714%);
 }
 
 .note {
