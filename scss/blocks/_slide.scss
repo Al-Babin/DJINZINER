@@ -1,0 +1,74 @@
+.slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide-frame, .slide-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-frame__mockup, .slide-content__mockup {
+    position: absolute;
+    top: 32.93818%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.slide-frame__bg, .slide-content__bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.slide-frame__bg {
+    background: linear-gradient(92.05deg, #091C91 0%, #24BCFF 99.29%);
+}
+
+.slide-content__bg {
+    background: url("/img/prortfolio/portfolio-bg-1.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+.slide-content__mockup-label, .slide-frame__mockup-label {
+    position: absolute;
+    bottom: 107px;
+    left: 392px;
+    z-index: 2;
+}
+
+//Mockup label
+
+.slide-frame__mockup-label {
+    color: white;
+}
+
+.mocup-label__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    
+    padding: 0;
+    margin: 0;
+}
+
+.mocup-label__name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+
+    padding: 0;
+    margin: 0;
+}
