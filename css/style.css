@@ -273,6 +273,7 @@
   min-width: 327px;
   border-radius: 90px;
   overflow: hidden;
+  z-index: 1;
 }
 
 .button-wrapper::before {
@@ -1481,7 +1482,7 @@
 
 .portfolio__buttons {
   position: relative;
-  z-index: 2;
+  z-index: 5;
   width: 89.583%;
   display: flex;
   justify-content: space-between;
@@ -1907,6 +1908,10 @@
   height: 100%;
 }
 
+.slide-frame {
+  z-index: 2;
+}
+
 .slide-frame__mockup, .slide-content__mockup {
   position: absolute;
   top: 32.93818%;
@@ -1935,31 +1940,45 @@
   background-size: cover;
 }
 
-.slide-content__mockup-label, .slide-frame__mockup-label {
+.slide-label {
   position: absolute;
   bottom: 107px;
   left: 392px;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
   z-index: 2;
-}
-
-.slide-frame__mockup-label {
   color: white;
 }
 
-.mocup-label__title {
+.slide-label__title {
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  letter-spacing: 0.01em;
   padding: 0;
   margin: 0;
 }
 
-.mocup-label__name {
+.slide-label__name {
   font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  letter-spacing: 0.01em;
   padding: 0;
   margin: 0;
+}
+
+.slide-label--onhover.slide-label {
+  position: absolute;
+  top: 187px;
+  left: 392px;
+  z-index: 2;
+  font-size: 46px;
+  line-height: 56px;
+  letter-spacing: 0.01em;
+  color: #D1774B;
+}
+
+.slide__button {
+  width: 327px;
+  position: absolute;
+  bottom: 8.4674%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */
