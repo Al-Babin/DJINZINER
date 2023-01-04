@@ -75,7 +75,10 @@
 .slide-label--onhover.slide-label {
     position: absolute;
     top: 187px;
-    left: 392px;
+    bottom: initial;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 2;
 
     font-size: 46px;

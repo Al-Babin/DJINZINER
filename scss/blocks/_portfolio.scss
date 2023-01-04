@@ -24,12 +24,22 @@
 }
 
 .portfolio__buttons {
-    position: relative;
-    z-index: 5;
+    position: absolute;
+    top: 51.9052%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
     width: 89.583%;
 
     display: flex;
     justify-content: space-between;
 
-    margin: 0 auto;
+}
+
+.portfolio-button::before {
+    background: url('../img/prortfolio/case-button-image.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 30px;
+    height: 27px
 }
