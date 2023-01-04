@@ -1945,7 +1945,7 @@
 }
 
 .slide-content__bg {
-  background: url("./img/prortfolio/portfolio-bg-1.png");
+  background: url("../img/prortfolio/portfolio-bg-1.png");
   background-position: center center;
   background-size: cover;
 }
