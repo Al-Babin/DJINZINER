@@ -1,12 +1,15 @@
-let frameMocup = document.querySelector('.slide-frame__mockup');
-let contentMocup = document.querySelector('.slide-content__mockup');
-let content = document.querySelector('.slide-content');
-let frame = document.querySelector('.slide-frame');
-let pageTitle = document.querySelector('.portfolio-title'); 
-let slideLabel = document.querySelector('.slide-label'); 
+let frameMocup = document.querySelectorAll('.slide-frame__mockup');
+let contentMocup = document.querySelectorAll('.slide-content__mockup');
+let content = document.querySelectorAll('.slide-content');
+let frame = document.querySelectorAll('.slide-frame');
+let pageTitle = document.querySelectorAll('.portfolio-title'); 
+let slideLabel = document.querySelectorAll('.slide-label'); 
 
-frameMocup.addEventListener('mouseover', removeClass);
-contentMocup.addEventListener('mouseout', addClass);
+for(let i = 0; i < frameMocup.length; i++) {
+    frameMocup[i].addEventListener('mouseover', removeClass);
+    contentMocup[i].addEventListener('mouseout', addClass);     
+}
+
 
 function removeClass() {
     content.classList.remove('visually-hidden');
