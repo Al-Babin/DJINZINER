@@ -24,17 +24,18 @@
     transform: translateX(0);
 }
 
-.portfolio__buttons {
+.portfolio__button {
     position: absolute;
     top: 51.9052%;
-    left: 50%;
-    transform: translateX(-50%);
     z-index: 3;
-    width: 89.583%;
+}
 
-    display: flex;
-    justify-content: space-between;
+.portfolio__button--next {
+    right: 5.21%;
+}
 
+.portfolio__button--prev {
+    left: 5.21%;
 }
 
 .portfolio-button::before {
