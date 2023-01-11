@@ -16,6 +16,12 @@ function removeClass() {
         content[i].classList.remove('visually-hidden');
         frame[i].classList.add ('visually-hidden');
         slideLabel[i].classList.add ('slide-label--onhover');
+    }
+    for(let item of slideLabel) {
+        console.log(item.classList);
+        let colorLabel = item.dataset.labelColor;
+        console.log(colorLabel);
+        item.style.color = colorLabel;
     }    
     pageTitle.classList.add ('visually-hidden'); 
 }
@@ -26,6 +32,9 @@ function addClass() {
         frame[i].classList.remove ('visually-hidden');
         slideLabel[i].classList.remove ('slide-label--onhover');
     }
+    for(let item of slideLabel) {
+        item.style.color = "";
+    } 
     pageTitle.classList.remove ('visually-hidden');
 }
 
