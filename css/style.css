@@ -1503,6 +1503,7 @@
 }
 
 .arrow-button {
+  --arrow-button-before-background: linear-gradient(92.05deg, #091C91 0%, #24BCFF 99.29%);
   width: 74px;
   height: 74px;
   background: linear-gradient(92.05deg, #A2B6ED 0%, #216CCF 99.29%);
@@ -1524,7 +1525,7 @@
   position: absolute;
   width: 60px;
   height: 60px;
-  background: linear-gradient(92.05deg, #091C91 0%, #24BCFF 99.29%);
+  background: var(--arrow-button-before-background);
   border-radius: 50%;
   z-index: 0;
 }
