@@ -6,6 +6,8 @@ let pageTitle = document.querySelector('.portfolio-title');
 let slideLabel = document.querySelectorAll('.slide-label'); 
 let slideCollection = document.querySelectorAll('.slide'); 
 let arrowButtons = document.querySelectorAll('.arrow-button');
+let buttonMovingParts = document.querySelectorAll('.button-moving-part--portfolio');
+let slideButtons = document.querySelectorAll('.slide__button');
 
 //adding listeners on all slides
 for(let i = 0; i < frameMocup.length; i++) {
@@ -57,6 +59,9 @@ function changeButtonColors(isDeleted = false) {
         for(let button of arrowButtons) {
             button.removeAttribute('style');
         }
+        for(let slideButton of slideButtons) {
+            slideButton.removeAttribute('style');
+        }
     } else {
         let colorOutFirst = slideCollection[currentSlide].dataset.buttonsColoroutFirst;
         let colorOutSecond = slideCollection[currentSlide].dataset.buttonsColoroutSecond;
@@ -65,6 +70,12 @@ function changeButtonColors(isDeleted = false) {
         for(let button of arrowButtons) {
             button.style.background = `linear-gradient(92.05deg, ${colorOutFirst} 0%, ${colorOutSecond} 99.29%)`;
             button.style.setProperty('--arrow-button-before-background', `linear-gradient(92.05deg, ${colorInFirst} 0%, ${colorInSecond} 99.29%)`);
+        }
+        for(let buttonMovingPart of buttonMovingParts) {
+            buttonMovingPart.style.background = `linear-gradient(92.05deg, ${colorInFirst} 0%, ${colorInSecond} 99.29%)`;
+        }
+        for(let slideButton of slideButtons) {
+            slideButton.style.setProperty('--button-moving-part-before-background', `linear-gradient(92.05deg, ${colorOutFirst} 0%, ${colorOutSecond} 99.29%)`)
         }
     }
 }

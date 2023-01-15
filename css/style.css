@@ -2012,8 +2012,13 @@
 }
 
 .slide__button {
+  --button-moving-part-before-background: linear-gradient(92.05deg, #A2B6ED 0%, #216CCF 99.29%);
   width: 327px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+}
+
+.slide__button::before {
+  background: var(--button-moving-part-before-background);
 }/*# sourceMappingURL=style.css.map */
