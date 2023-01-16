@@ -8,7 +8,7 @@ let slideCollection = document.querySelectorAll('.slide');
 let arrowButtons = document.querySelectorAll('.arrow-button');
 let buttonMovingParts = document.querySelectorAll('.button-moving-part--portfolio');
 let slideButtons = document.querySelectorAll('.slide__button');
-
+let duration = 'fast';
 //adding listeners on all slides
 for(let i = 0; i < frameMocup.length; i++) {
     frameMocup[i].addEventListener('mouseenter', removeClass);
@@ -17,24 +17,44 @@ for(let i = 0; i < frameMocup.length; i++) {
 
 function removeClass() {
     for(let i = 0; i < frameMocup.length; i++) {
-        content[i].classList.remove('visually-hidden');
-        frame[i].classList.add ('visually-hidden');
-        slideLabel[i].classList.add ('slide-label--onhover');
+        $(content).fadeIn(duration, () => {
+            content[i].classList.remove('visually-hidden');
+            pageTitle.classList.add ('visually-hidden'); 
+        });
+        $(frame).fadeOut(duration,() => {
+            frame[i].classList.add ('visually-hidden'); 
+            changeLabelColors();   
+            changeButtonColors();        
+        });
+        $(slideLabel).fadeIn(duration, () => {
+            slideLabel[i].classList.add ('slide-label--onhover');
+        });
     }
-    changeLabelColors();   
-    changeButtonColors();
+    // changeLabelColors();   
+    // changeButtonColors();
     pageTitle.classList.add ('visually-hidden'); 
 }
 
 function addClass() {
     for(let i = 0; i < frameMocup.length; i++) {
-        content[i].classList.add('visually-hidden');
-        frame[i].classList.remove ('visually-hidden');
-        slideLabel[i].classList.remove ('slide-label--onhover');
+        $(content).fadeOut(duration, () => {
+            content[i].classList.add('visually-hidden');
+            pageTitle.classList.remove ('visually-hidden');
+        });
+        $(frame).fadeIn(duration,() => {
+            frame[i].classList.remove ('visually-hidden');
+            changeLabelColors(true)
+            changeButtonColors(true);
+        });
+        $(slideLabel).fadeOut(duration, () => {
+            slideLabel[i].classList.remove ('slide-label--onhover');
+            $(slideLabel).fadeIn(duration/2);
+        });
     }
-    changeLabelColors(true)
-    changeButtonColors(true);
-    pageTitle.classList.remove ('visually-hidden');
+    // changeLabelColors(true)
+    // changeButtonColors(true);
+
+    // pageTitle.classList.remove ('visually-hidden');
 }
 
 //Changing color of label. Get colors from layout and set to current label
