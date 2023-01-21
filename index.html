@@ -7,6 +7,35 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body" >
+	<article class="feedback-form">
+		<form class="form" action="" method="post">
+			<h3 class="form__title">Напишите ваш вопрос:</h3>
+			<div class="form__fields">
+				<div class="form__field form-field">
+					<label for="user-name" class="form-field__placeholder">Имя ... <span>*</span></label> 
+					<input class="form-field__input" id="user-name" type="text" name="name">
+				</div>
+				<div class="form__field form-field">
+					<label for="user-email" class="form-field__placeholder">E-mail ... <span>*</span></label>
+					<input class="form-field__input" id="user-email" type="text" name="email">
+				</div>
+				<div class="form__field form-field">
+					<label for="user-phone" class="form-field__placeholder">Номер телефона ... <span>*</span></label>
+					<input class="form-field__input" id="user-phone" type="text" name="phone">
+				</div>
+				<div class="form__field form-field form-field--message">
+					<label for="user-message" class="form-field__placeholder">Введите cообщение или вопрос ... </label>
+					<textarea class="form-field__input" id="user-message" type="text" name="message" > </textarea>
+				</div>	
+			</div>
+			<div class="button-wrapper form__button-wrapper">
+				<button disabled type="submit" class="button form__button" data-buttonContent="Отправить послание">Отправить послание</button>
+				<div class="moving-part-wrapper">
+					<div class="button-moving-part"></div>
+				</div>
+			</div>
+		</form>
+	</article>
 	<header class="page-header" id="header">
 		<nav class="nav container page-header__nav">
 			<div class="nav__logo">
