@@ -67,9 +67,12 @@ input, textarea {
 
 .form-field__placeholder {
     position: absolute;
+    z-index: 1;
     top: 50%;
     left: 20px;
     transform: translateY(-50%);
+    transition: all 700ms ease-out;
+    cursor: text;
 }
 
 .form-field--message .form-field__placeholder {
@@ -86,6 +89,8 @@ input, textarea {
 }
 
 .form-field__input {
+    position: relative;
+    z-index: 10;
     width: 100%;
     height: 100%;
     background-color: transparent;

@@ -9,28 +9,57 @@
 <body class="page__body" >
 	<article class="feedback-form visually-hidden">
 		<div class="feedback-form__bg"></div>
-		<form class="form form-hidden" action="" method="post">
+		<form class="form form-hidden" name="feedback-form" action="" method="post">
 			<h3 class="form__title">Напишите ваш вопрос:</h3>
 			<div class="form__fields">
 				<div class="form__field form-field">
 					<label for="user-name" class="form-field__placeholder">Имя ... <span>*</span></label> 
-					<input class="form-field__input" id="user-name" type="text" name="name">
+					<input 
+						class="form-field__input" 
+						id="user-name" 
+						type="text" 
+						name="name"
+						pattern="[A-Za-zА-Яа-яЁё]{1,15}"
+						required
+						title="Введите свое имя, например, &quot;Сергей&quot;"
+					>
 				</div>
 				<div class="form__field form-field">
 					<label for="user-email" class="form-field__placeholder">E-mail ... <span>*</span></label>
-					<input class="form-field__input" id="user-email" type="text" name="email">
+					<input 
+						class="form-field__input" 
+						id="user-email" 
+						type="email"
+						name="email"
+						required
+						title="Введите email в формате xxx@xxx.com"
+					>
 				</div>
 				<div class="form__field form-field">
 					<label for="user-phone" class="form-field__placeholder">Номер телефона ... <span>*</span></label>
-					<input class="form-field__input" id="user-phone" type="text" name="phone">
+					<input 
+						class="form-field__input" 
+						id="user-phone" 
+						type="tel" 
+						name="phone" 
+						pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+						required
+						title="Введите номер телефона в формате +7(xxx)xxx-xx-xx"
+					>
 				</div>
 				<div class="form__field form-field form-field--message">
 					<label for="user-message" class="form-field__placeholder">Введите cообщение или вопрос ... </label>
-					<textarea class="form-field__input" id="user-message" type="text" name="message" > </textarea>
+					<textarea 
+						class="form-field__input" 
+						id="user-message" 
+						type="text" 
+						name="message"
+						title="Напишите ваш вопрос или оставьте поле пустым" 
+					></textarea>
 				</div>	
 			</div>
 			<div class="button-wrapper form__button-wrapper">
-				<button disabled type="submit" class="button form__button" data-buttonContent="Отправить послание">Отправить послание</button>
+				<button type="submit" class="button form__button" data-buttonContent="Отправить послание">Отправить послание</button>
 				<div class="moving-part-wrapper">
 					<div class="button-moving-part"></div>
 				</div>
@@ -561,8 +590,8 @@
 	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 	<script src="js/to-scroll.js"></script>
 	<script src="js/portfolio-hover.js"></script>
-	<script src="js/show-form.js"></script>
-	<script src="js/validate-form.js"></script>
+	<script src="js/show-form.js" type="module"></script>
+	<script src="js/validate-form.js" type="module"></script>
 	<script src="js/slider.js"></script>
 	<!-- 
 	<script src="js/scroll.js"></script>
