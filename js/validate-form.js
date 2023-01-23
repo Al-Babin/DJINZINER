@@ -1,5 +1,6 @@
 const placeholders = document.querySelectorAll('.form-field__placeholder');
 const inputs = document.querySelectorAll('.form-field__input');
+const button = document.querySelector('.form__button');
 
 for (let i = 0; i < inputs.length; i++) {
     inputs[i].onfocus = function() {
@@ -13,4 +14,3 @@ for (let i = 0; i < inputs.length; i++) {
         }
     }
 }
-
