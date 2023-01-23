@@ -5,6 +5,16 @@
     height: 100vh;
 }
 
+.feedback-form__bg {
+    content: "";
+    position: absolute;
+    background-color: $page-color-form-active;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 800ms ease-out;
+}
+
 input, textarea {
     border: none;
 } 
@@ -24,6 +34,7 @@ input, textarea {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    transition: transform 1000ms ease-out;
 }
 
 .form__title {
@@ -98,6 +109,10 @@ input, textarea {
     top: 58%;
     width: 30px;
     height: 30px;
+}
+
+.form-hidden {
+    transform: translate(100vw, -50%);
 }
 
 
