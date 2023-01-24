@@ -17,44 +17,78 @@ for(let i = 0; i < frameMocup.length; i++) {
 
 function removeClass() {
     for(let i = 0; i < frameMocup.length; i++) {
-        $(content).fadeIn(duration, () => {
-            content[i].classList.remove('visually-hidden');
-            pageTitle.classList.add ('visually-hidden'); 
-        });
-        $(frame).fadeOut(duration,() => {
-            frame[i].classList.add ('visually-hidden'); 
-            changeLabelColors();   
-            changeButtonColors();        
-        });
-        $(slideLabel).fadeIn(duration, () => {
+        $(pageTitle).animate({ left: "-50vw",opacity: "0"}, 1200);
+        $(slideLabel[i]).animate({ opacity: "0"}, 100, function() {
             slideLabel[i].classList.add ('slide-label--onhover');
+            changeLabelColors(); 
+            $(slideLabel[i])
+            .animate({ left: "60%"})
+            .animate({ left: "50%", opacity: "1"}, 800);
         });
+        for(let button of arrowButtons){
+            $(button).animate({ opacity: "0"}, 200, function() {
+                changeButtonColors();
+                $(button).animate({ opacity: "1"}, 300);
+            });
+        }
+
+        $(frame[i]).animate({ opacity: "0"}, 1200, function() {
+            frame[i].classList.add ('visually-hidden');
+        });
+
+        // $(content).fadeIn(duration, () => {
+        //     content[i].classList.remove('visually-hidden');
+        //     // pageTitle.classList.add ('visually-hidden'); 
+        // });
+        // $(frame).fadeOut(duration,() => {
+        //     frame[i].classList.add ('visually-hidden'); 
+        //     changeLabelColors();   
+        //     changeButtonColors();        
+        // });
+        // $(slideLabel).fadeIn(duration, () => {
+        //     slideLabel[i].classList.add ('slide-label--onhover');
+        // });
     }
-    // changeLabelColors();   
-    // changeButtonColors();
-    pageTitle.classList.add ('visually-hidden'); 
 }
 
 function addClass() {
     for(let i = 0; i < frameMocup.length; i++) {
-        $(content).fadeOut(duration, () => {
-            content[i].classList.add('visually-hidden');
-            pageTitle.classList.remove ('visually-hidden');
-        });
-        $(frame).fadeIn(duration,() => {
-            frame[i].classList.remove ('visually-hidden');
-            changeLabelColors(true)
-            changeButtonColors(true);
-        });
-        $(slideLabel).fadeOut(duration, () => {
-            slideLabel[i].classList.remove ('slide-label--onhover');
-            $(slideLabel).fadeIn(duration/2);
-        });
-    }
-    // changeLabelColors(true)
-    // changeButtonColors(true);
+        //inverted
+        frame[i].classList.remove('visually-hidden');
 
-    // pageTitle.classList.remove ('visually-hidden');
+        $(frame[i]).animate({ opacity: "1"}, 1200);
+
+        for(let button of arrowButtons){
+            $(button).animate({ opacity: "0.5"}, 800, function() {
+                changeButtonColors(true);
+                // $(button).animate({ opacity: "1"}, 300);
+            });
+        }
+        // $(slideLabel[i]).animate({ opacity: "0"}, 100, function() {
+        //     slideLabel[i].classList.add ('slide-label--onhover');
+        //     changeLabelColors(); 
+        //     $(slideLabel[i])
+        //     .animate({ left: "60%"})
+        //     .animate({ left: "50%", opacity: "1"}, 800);
+        // });
+        // $(pageTitle).animate({ left: "-50vw",opacity: "0"}, 1200);
+
+
+        // $(content).fadeOut(duration, () => {
+        //     content[i].classList.add('visually-hidden');
+        //     pageTitle.classList.remove ('visually-hidden');
+        // });
+        // $(frame).fadeIn(duration,() => {
+        //     frame[i].classList.remove ('visually-hidden');
+        //     changeLabelColors(true)
+        //     changeButtonColors(true);
+        // });
+        // $(slideLabel).fadeOut(duration, () => {
+        //     slideLabel[i].classList.remove ('slide-label--onhover');
+        //     $(slideLabel).fadeIn(duration/2);
+        // });
+    }
+
 }
 
 //Changing color of label. Get colors from layout and set to current label
