@@ -16,8 +16,9 @@ for(let i = 0; i < frameMocup.length; i++) {
 }
 
 function removeClass() {
-    for(let i = 0; i < frameMocup.length; i++) {
-        $(pageTitle).animate({ left: "-50vw",opacity: "0"}, 1200);
+        let i = slider.dataset.currentSlide - 1;
+        $(pageTitle).animate({ left: "-50%", opacity: "0"}, 1200, function() {
+        });
         $(slideLabel[i]).animate({ opacity: "0"}, 100, function() {
             slideLabel[i].classList.add ('slide-label--onhover');
             changeLabelColors(); 
@@ -35,60 +36,29 @@ function removeClass() {
         $(frame[i]).animate({ opacity: "0"}, 1200, function() {
             frame[i].classList.add ('visually-hidden');
         });
-
-        // $(content).fadeIn(duration, () => {
-        //     content[i].classList.remove('visually-hidden');
-        //     // pageTitle.classList.add ('visually-hidden'); 
-        // });
-        // $(frame).fadeOut(duration,() => {
-        //     frame[i].classList.add ('visually-hidden'); 
-        //     changeLabelColors();   
-        //     changeButtonColors();        
-        // });
-        // $(slideLabel).fadeIn(duration, () => {
-        //     slideLabel[i].classList.add ('slide-label--onhover');
-        // });
-    }
 }
 
 function addClass() {
-    for(let i = 0; i < frameMocup.length; i++) {
+        let i = slider.dataset.currentSlide - 1;
         //inverted
         frame[i].classList.remove('visually-hidden');
 
-        $(frame[i]).animate({ opacity: "1"}, 1200);
+        $(frame[i]).animate({ opacity: "1"}, 400);
+        $(pageTitle).animate({ left: "0",opacity: "1"}, 400);
 
         for(let button of arrowButtons){
-            $(button).animate({ opacity: "0.5"}, 800, function() {
+            $(button).animate({ opacity: "0.4"}, 200, function() {
                 changeButtonColors(true);
-                // $(button).animate({ opacity: "1"}, 300);
+                $(button).animate({ opacity: "1"}, 400);
             });
         }
-        // $(slideLabel[i]).animate({ opacity: "0"}, 100, function() {
-        //     slideLabel[i].classList.add ('slide-label--onhover');
-        //     changeLabelColors(); 
-        //     $(slideLabel[i])
-        //     .animate({ left: "60%"})
-        //     .animate({ left: "50%", opacity: "1"}, 800);
-        // });
-        // $(pageTitle).animate({ left: "-50vw",opacity: "0"}, 1200);
 
-
-        // $(content).fadeOut(duration, () => {
-        //     content[i].classList.add('visually-hidden');
-        //     pageTitle.classList.remove ('visually-hidden');
-        // });
-        // $(frame).fadeIn(duration,() => {
-        //     frame[i].classList.remove ('visually-hidden');
-        //     changeLabelColors(true)
-        //     changeButtonColors(true);
-        // });
-        // $(slideLabel).fadeOut(duration, () => {
-        //     slideLabel[i].classList.remove ('slide-label--onhover');
-        //     $(slideLabel).fadeIn(duration/2);
-        // });
-    }
-
+        $(slideLabel[i]).animate({ opacity: "0"}, 100, function() {
+            slideLabel[i].classList.remove ('slide-label--onhover');
+            changeLabelColors(true); 
+            $(slideLabel[i])
+            .animate({ opacity: "1"}, 600);
+        });
 }
 
 //Changing color of label. Get colors from layout and set to current label

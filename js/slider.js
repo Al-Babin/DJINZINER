@@ -23,7 +23,6 @@ function nextSlide() {
         slider.style.transform = `translateX(${translationX - slideWidth}px)` ; 
         translationX = translationX - slideWidth;
         count ++;
-        console.log(count);
         slider.dataset.currentSlide = count;
     } else return
 } 
@@ -36,7 +35,6 @@ function prevSlide() {
     } else {
         return 
     }
-    console.log(count);
     slider.dataset.currentSlide = count;
 }
 
