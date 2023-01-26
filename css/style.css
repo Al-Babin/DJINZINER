@@ -73,13 +73,9 @@
   min-height: 970px;
 }
 
-.page-header__nav {
-  position: relative;
-  z-index: 1;
-}
-
 .page-header__content {
   display: flex;
+  padding-top: 34.9484536vh;
 }
 
 .page-header__offer {
@@ -110,7 +106,8 @@
 }
 
 .nav {
-  position: relative;
+  position: absolute;
+  width: 100%;
   height: 140px;
 }
 .nav::before {
@@ -238,7 +235,10 @@
 }
 
 .sticky-nav.nav {
-  height: 100px;
+  height: 10.3092784vh;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 .sticky-nav.nav::before {
   display: block;
@@ -257,7 +257,6 @@
   height: 307px;
   font-size: 16px;
   position: relative;
-  margin-top: 196px;
   margin-bottom: 70px;
 }
 
