@@ -239,7 +239,7 @@
   height: 10.3092784vh;
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 99;
 }
 .sticky-nav.nav::before {
   display: block;
