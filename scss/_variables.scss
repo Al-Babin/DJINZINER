@@ -10,11 +10,10 @@ $font-family: "Century Gothic";
 
 // Viewport
 
-$desktop: 1920px;
-$mobile-only: 767px;
-$tablet: 768px;
-$netbooks: 1024px;
-$header-break: 497px;
-
-// dot-size
-$dot-size: 15px;
+$vp-desktopLarge: 1920px;
+$vp-desktopMedium: 1600px;
+$vp-desktopSmall: 1366px;
+$vp-tabletLarge: 1024px;
+$vp-tabletSmall: 768px;
+$vp-mobileLarge: 480px;
+$vp-mobileSmall: 320px;

@@ -61,6 +61,42 @@
   margin: 0;
   margin-bottom: 80px;
 }
+@media (max-width: 1600px) {
+  .page-title {
+    font-size: 70px;
+    line-height: 86px;
+  }
+}
+@media (max-width: 1366px) {
+  .page-title {
+    font-size: 60px;
+    line-height: 74px;
+  }
+}
+@media (max-width: 1024px) {
+  .page-title {
+    font-size: 50px;
+    line-height: 61px;
+  }
+}
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 40px;
+    line-height: 49px;
+  }
+}
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+@media (max-width: 320px) {
+  .page-title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
 
 .page-title--white {
   color: white;
