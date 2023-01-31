@@ -12,6 +12,8 @@
 .contacts__content {
     display: flex;
     flex-direction: column;
+    width: 74.375vw;
+    margin: auto;
 }
 
 .contacts__paragraph {
@@ -176,7 +178,7 @@
 //Contaacts title djinn
 .contacts-title--margin-left {
     display: inline-block;
-    margin-left: 154px;
+    margin-left: 1.71111em;
 }
 
 .contacts-title--djin {

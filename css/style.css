@@ -823,8 +823,6 @@ p {
 .page-main__contacts {
   padding-top: 100px;
   padding-bottom: 50px;
-  padding-left: 246px;
-  padding-right: 246px;
 }
 
 .services {
@@ -1864,6 +1862,8 @@ p {
 .contacts__content {
   display: flex;
   flex-direction: column;
+  width: 74.375vw;
+  margin: auto;
 }
 
 .contacts__paragraph {
@@ -1997,7 +1997,7 @@ p {
 
 .contacts-title--margin-left {
   display: inline-block;
-  margin-left: 154px;
+  margin-left: 1.71111em;
 }
 
 .contacts-title--djin::before {
