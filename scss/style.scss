@@ -1,6 +1,10 @@
 //Fonts import
 @import "./fonts";
 
+//basic styles
+
+@import "./basic-styles";  
+
 //Sass modules import
 
 @import "./variables.scss";
@@ -37,5 +41,3 @@
 @import "./blocks/title-gradientPart";
 @import "./blocks/slide";
 @import "./blocks/feedback-form";
-
-//basic styles

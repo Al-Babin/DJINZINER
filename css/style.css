@@ -16,6 +16,38 @@
   font-weight: 400;
   font-style: normal;
 }
+p {
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: 0.01em;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 1600px) {
+  p {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+@media (max-width: 1366px) {
+  p {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+@media (max-width: 1024px) {
+  p {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+@media (max-width: 320px) {
+  p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1001,11 +1033,6 @@
 
 .skills-column__title {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 49px;
-  letter-spacing: 0.01em;
-  margin: 0;
-  padding: 0;
 }
 
 .skills-column__title--margin-left {
@@ -1659,13 +1686,8 @@
   position: relative;
   z-index: 5;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 49px;
   text-align: center;
-  letter-spacing: 0.01em;
   color: #1F2A3C;
-  margin: 0;
-  padding: 0;
   margin-bottom: 40px;
 }
 
@@ -1742,13 +1764,8 @@
 }
 
 .step-card__title {
-  margin: 0;
-  padding: 0;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 49px;
   text-align: center;
-  letter-spacing: 0.01em;
   color: #1F2A3C;
   margin-bottom: 40px;
   z-index: 2;
@@ -1789,12 +1806,7 @@
 
 .contacts__paragraph {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 49px;
-  letter-spacing: 0.01em;
   color: #1F2A3C;
-  margin: 0;
-  padding: 0;
 }
 
 .contacts__content {
