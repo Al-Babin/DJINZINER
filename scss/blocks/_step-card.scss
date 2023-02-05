@@ -59,6 +59,16 @@
 
     transition: 600ms ease-out;
     transition-delay: 0.1s;
+
+    @media (max-width:$vp-desktopMedium) {
+        font-size: 100px;
+        line-height: 110px;
+    }
+
+    @media (max-width:$vp-desktopSmall) {
+        font-size: 80px;
+        line-height: 90px;
+    }
 }
 
 .step-card:hover .step-card__number {
@@ -99,6 +109,25 @@
 
     z-index: 2;
 
+    @media (max-width:$vp-desktopMedium) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    @media (max-width:$vp-desktopSmall) {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    @media (max-width:$vp-mobileLarge) {
+        font-size: 16px;
+        line-height: 20px;   
+    }
+
+    @media (max-width:$vp-mobileSmall) {
+        font-size: 14px;
+        line-height: 17px;  
+    }
 }
 
 .step-card:hover .step-card__text {
