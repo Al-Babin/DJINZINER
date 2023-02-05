@@ -74,6 +74,21 @@
     background-clip: text;
     margin-bottom: 15px;
     z-index: 1;
+
+    @media (max-width:$vp-desktopMedium) {
+        font-size: 90px;
+        line-height: 110px;
+    }
+
+    @media (max-width:$vp-desktopSmall) {
+        font-size: 80px;
+        line-height: 98px;
+    }
+
+    @media (max-width:$vp-tabletLarge) {
+        font-size: 60px;
+        line-height: 74px;   
+    }
 }
 
 .statistics-item:hover .statistics-item__index {
@@ -93,6 +108,21 @@
     padding: 0;
     margin-bottom: 20px;
     z-index: 1;
+
+    @media (max-width:$vp-desktopMedium) {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    @media (max-width:$vp-desktopSmall) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    @media (max-width:$vp-tabletLarge) {
+        font-size: 16px;
+        line-height: 20px;   
+    }
 }
 
 .statistics-item__text {
@@ -104,4 +134,14 @@
     margin: 0;
     padding: 0;
     z-index: 1;
+
+    @media (max-width:$vp-desktopMedium) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    @media (max-width:$vp-desktopSmall) {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }

@@ -1029,6 +1029,24 @@ p {
   margin-bottom: 15px;
   z-index: 1;
 }
+@media (max-width: 1600px) {
+  .statistics-item__index {
+    font-size: 90px;
+    line-height: 110px;
+  }
+}
+@media (max-width: 1366px) {
+  .statistics-item__index {
+    font-size: 80px;
+    line-height: 98px;
+  }
+}
+@media (max-width: 1024px) {
+  .statistics-item__index {
+    font-size: 60px;
+    line-height: 74px;
+  }
+}
 
 .statistics-item:hover .statistics-item__index {
   background: none;
@@ -1048,6 +1066,24 @@ p {
   margin-bottom: 20px;
   z-index: 1;
 }
+@media (max-width: 1600px) {
+  .statistics-item__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 1366px) {
+  .statistics-item__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 1024px) {
+  .statistics-item__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
 
 .statistics-item__text {
   font-weight: 400;
@@ -1058,6 +1094,18 @@ p {
   margin: 0;
   padding: 0;
   z-index: 1;
+}
+@media (max-width: 1600px) {
+  .statistics-item__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 1366px) {
+  .statistics-item__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .skills__wrapper {
