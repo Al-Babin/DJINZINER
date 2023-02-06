@@ -39,7 +39,27 @@
     font-size: 24px;
     line-height: 32px;
     color: white;
-    margin-bottom: 30px;;
+    margin-bottom: 30px;
+
+    @media (max-width: $vp-desktopMedium) {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    @media (max-width: $vp-desktopSmall) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @media (max-width: $vp-tabletSmall) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    @media (max-width: $vp-mobileSmall) {
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
 
 .note__list {
@@ -52,6 +72,26 @@
     line-height: 36px;
     letter-spacing: 0.01em;
     color: white;
+
+    @media (max-width: $vp-desktopMedium) {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    @media (max-width: $vp-desktopSmall) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @media (max-width: $vp-tabletSmall) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    @media (max-width: $vp-mobileSmall) {
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
 
 .note__item {
