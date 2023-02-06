@@ -25,6 +25,9 @@
     padding-left: 80px;
     padding-right: 80px;
     position: relative;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
 
     &::after {
         content: "";
@@ -38,6 +41,26 @@
         background: linear-gradient(92.05deg, rgba(9, 28, 145, 1) 0%, rgba(36, 188, 255, 1) 99.29%);
         opacity: 0;
         z-index: 0;
+    }
+
+    @media (max-width: $vp-desktopMedium) {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    @media (max-width: $vp-desktopSmall) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    @media (max-width: $vp-tabletSmall) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    @media (max-width: $vp-mobileSmall) {
+        font-size: 14px;
+        line-height: 17px;
     }
 }
 
@@ -82,9 +105,8 @@
     margin: 0;
     padding: 0;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.01em;
+    font-size: inherit;
+    line-height: inherit;
     z-index: 1;
 
     transition: all 600ms ease-out;
@@ -94,10 +116,9 @@
     margin: 0;
     padding: 0;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: inherit;
+    line-height: inherit;
     text-align: right;
-    letter-spacing: 0.01em;
     position: relative;
     padding-right: 30px;
     color: $text-color;

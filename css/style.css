@@ -1559,6 +1559,9 @@ p {
   padding-left: 80px;
   padding-right: 80px;
   position: relative;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
 }
 .price-block__item::after {
   content: "";
@@ -1571,6 +1574,30 @@ p {
   background: linear-gradient(92.05deg, rgb(9, 28, 145) 0%, rgb(36, 188, 255) 99.29%);
   opacity: 0;
   z-index: 0;
+}
+@media (max-width: 1600px) {
+  .price-block__item {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 1366px) {
+  .price-block__item {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .price-block__item {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .price-block__item {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 .price-block__item:first-child {
@@ -1610,9 +1637,8 @@ p {
   margin: 0;
   padding: 0;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  letter-spacing: 0.01em;
+  font-size: inherit;
+  line-height: inherit;
   z-index: 1;
   transition: all 600ms ease-out;
 }
@@ -1621,10 +1647,9 @@ p {
   margin: 0;
   padding: 0;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: inherit;
+  line-height: inherit;
   text-align: right;
-  letter-spacing: 0.01em;
   position: relative;
   padding-right: 30px;
   color: #1F2A3C;
