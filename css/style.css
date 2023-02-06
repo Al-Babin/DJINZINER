@@ -877,17 +877,69 @@ p {
   font-weight: 700;
   font-size: 44px;
   line-height: 54px;
-  padding: 0;
-  margin: 0;
+  letter-spacing: 0.01em;
+}
+@media (max-width: 1600px) {
+  .services-card__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+@media (max-width: 1366px) {
+  .services-card__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+@media (max-width: 1024px) {
+  .services-card__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+@media (max-width: 768px) {
+  .services-card__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 
 .services-card__text {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
+  letter-spacing: 0.01em;
   text-align: center;
-  padding: 0;
-  margin: 0;
+}
+@media (max-width: 1600px) {
+  .services-card__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 1366px) {
+  .services-card__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .services-card__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .services-card__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .services-card__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .services-card--left {
