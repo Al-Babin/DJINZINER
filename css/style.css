@@ -1165,14 +1165,33 @@ p {
 .skills-item {
   display: flex;
   gap: 30px;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+}
+@media (max-width: 1600px) {
+  .skills-item {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 1366px) {
+  .skills-item {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .skills-item {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .skills-item__name {
   padding: 0;
   margin: 0;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
   color: #1F2A3C;
   margin-bottom: 10px;
 }
@@ -1181,8 +1200,6 @@ p {
   padding: 0;
   margin: 0;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
   color: #1F2A3C;
   max-width: 28.54vw;
 }
@@ -1329,6 +1346,24 @@ p {
   font-size: 20px;
   line-height: 24px;
 }
+@media (max-width: 1600px) {
+  .skills-column--right .skills-item__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 1366px) {
+  .skills-column--right .skills-item__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .skills-column--right .skills-item__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
 
 .skills-item__text span {
   color: #B0BFC6;
@@ -1441,7 +1476,7 @@ p {
     line-height: 24px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .note__list {
     font-size: 14px;
     line-height: 20px;

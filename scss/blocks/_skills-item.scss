@@ -1,14 +1,30 @@
 .skills-item {
     display: flex;
     gap: 30px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+
+    @media (max-width: $vp-desktopMedium) {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    @media (max-width: $vp-desktopSmall) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    @media (max-width: $vp-tabletLarge) {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 .skills-item__name {
     padding: 0;
     margin: 0;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
     color: $text-color;
     margin-bottom: 10px;
 }
@@ -17,8 +33,6 @@
     padding: 0;
     margin: 0;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
     color: $text-color;
     max-width: 28.54vw;
 }
@@ -33,7 +47,7 @@
 
 .skills-img {
     opacity: 1;
-    transition: all 600ms ease-out ;
+    transition: all 600ms ease-out;
 }
 
 //Icon of skills, which shows when hover: basic
@@ -169,6 +183,21 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+
+    @media (max-width: $vp-desktopMedium) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    @media (max-width: $vp-desktopSmall) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    @media (max-width: $vp-mobileSmall) {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 .skills-item__text span {
